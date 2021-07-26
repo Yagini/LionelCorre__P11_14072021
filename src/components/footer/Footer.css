@@ -1,0 +1,21 @@
+.footer {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 209px;
+    justify-content: center;
+}
+
+.footer__logo {
+    height: 40px;
+    width: 122px;
+}
+
+.footer__text {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.75rem;
+}
