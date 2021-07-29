@@ -1,0 +1,23 @@
+.error__title, .error__subtitle, .error__link {
+    color: #ff6060;    
+    text-align: center;
+    font-style: normal;
+}
+
+.error__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 235px;
+}
+
+.error__subtitle {
+    font-size: 1.125rem;
+    font-weight: 500; 
+    margin-bottom: 133px;     
+}
+
+.error__title {    
+    font-size: 6rem;
+    margin-top: 200px;
+}

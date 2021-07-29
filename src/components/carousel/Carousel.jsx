@@ -24,8 +24,8 @@ class Carousel extends React.Component {
     return (
       <div className="carousel">
         <FaChevronLeft className="carousel__left-arrow" onClick={this.prevPicture}/>
-        <FaChevronRight className="carousel__right-arrow" onclick={this.nextPicture}/>
-        <img src={pictures[currentPicture]} alt={title}></img>        
+        <FaChevronRight className="carousel__right-arrow" onClick={this.nextPicture}/>
+        <img src={pictures[currentPicture]} alt={title} className="carousel__img"></img>        
       </div>
     );
   }

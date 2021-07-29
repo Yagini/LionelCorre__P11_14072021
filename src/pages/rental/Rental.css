@@ -1,0 +1,44 @@
+.rental {
+    margin: auto;    
+    width: 335px;
+}
+
+.rental__host {    
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 335px;
+}
+
+.rental__mains-informations {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rental__presentation {
+    width: 90%;
+}
+
+.rental__title, .rental__location, .rental__host {
+    color: #FF6060;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rental__title {
+    font-size: 1.125rem;
+}
+
+.rental__location {
+    font-size: 0.875rem;
+}
+
+.rental__tag-body {
+    display: flex;
+    flex-direction: row;   
+    justify-content: flex-start;
+}
+
+

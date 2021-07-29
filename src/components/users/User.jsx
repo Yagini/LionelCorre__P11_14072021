@@ -6,9 +6,9 @@ class User extends React.Component {
     const { name, picture } = this.props;
 
     return (
-      <div className="host">
-        <p>{name}</p>
-        <img src={picture} alt={name} />
+      <div className="user">
+        <p className="user__name">{name}</p>
+        <img src={picture} alt={name} className="user__img" />
       </div>
     );
   }

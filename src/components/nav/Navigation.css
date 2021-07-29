@@ -22,11 +22,9 @@
 }
 
 .nav__link{
-    color: var(--main-color);
-    font-family: Montserrat ;
+    color: var(--main-color);    
     font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
+    font-style: normal;    
 }
 
 .nav__logo {

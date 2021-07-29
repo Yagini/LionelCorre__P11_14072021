@@ -1,7 +1,7 @@
 .banner{
     border-radius: 25px;    
-    height: 111px;
-    margin: 20px;
+    height: 111px; 
+    margin: auto;   
     position: relative;
     margin-bottom: 20px;
     width: 335px;
@@ -21,13 +21,12 @@
 .banner__background {    
     border-radius: 25px; 
     width: 335px;
-    height: 111px;
+    height: 100%;
     object-fit: cover;
 }
 
 .banner__text {    
     color: white;    
-    font-family: "Montserrat";
     font-size: 1.5rem;
     font-weight: 500;  
     position: absolute; 
@@ -35,3 +34,4 @@
     left: 20px;
     width: 217px;    
 }
+

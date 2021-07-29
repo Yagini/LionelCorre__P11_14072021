@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Banner from '../../components/banner/Banner';
 import Thumb from '../../components/thumb/Thumb';
 import { rentalList } from '../../datas/rentalList';
-import BackgroundImg from '../../assets/background.png'
+import BackgroundImg from '../../assets/homepage-background.png'
 import "./Homepage.css"
 
 class Homepage extends Component {

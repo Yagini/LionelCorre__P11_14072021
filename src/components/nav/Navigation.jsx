@@ -11,10 +11,10 @@ class Navigation extends React.Component {
           <img src={Logo} alt="Logo Kasa" className="nav__logo"></img>
         </Link>
         <div className="nav__main">
-          <Link exact to="/" className="nav__link nav__link--home">
+          <Link exact to="/" className="link nav__link nav__link--home">
             Accueil
           </Link>
-          <Link exact to="/a-propos" className="nav__link">
+          <Link exact to="/a-propos" className="link nav__link">
             A Propos
           </Link>
         </div>
