@@ -1,4 +1,26 @@
 .about {
-    width: 335px;
+  margin: auto;
+  width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    width: 728px;
+  }
+
+  .about__informations {
     margin: auto;
+    width: 546px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    margin-bottom: 120px;
+    width: 1240px;
+  }
+
+  .about__informations {
+    width: 1024px;
+  }
 }

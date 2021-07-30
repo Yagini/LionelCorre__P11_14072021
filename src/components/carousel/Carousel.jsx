@@ -1,21 +1,24 @@
 import React from "react";
-import {FaChevronRight, FaChevronLeft} from "react-icons/fa"
+
 import "./Carousel.css";
 
+import ChevronLeft from "../../assets/icons/chevron-left.svg";
+import ChevronRight from "../../assets/icons/chevron-right.svg";
+
 class Carousel extends React.Component {
-  state = { currentPicture: 0 };  
+  state = { currentPicture: 0 };
 
   nextPicture = () => {
-    this.setState((newState) => ({
-      currentPicture : newState.currentPicture === this.props.pictures.length -1 ? 0 : newState.currentPicture + 1
+    this.setState((prevState) => ({
+      currentPicture: prevState.currentPicture === this.props.pictures.length - 1 ? 0 : prevState.currentPicture + 1,
     }));
-  }
+  };
 
   prevPicture = () => {
-    this.setState((newState) => ({
-      currentPicture: newState.currentPicture === 0 ? this.props.pictures.length -1 : newState.currentPicture - 1
-    }))
-  }
+    this.setState((prevState) => ({
+      currentPicture: prevState.currentPicture === 0 ? this.props.pictures.length - 1 : prevState.currentPicture - 1,
+    }));
+  };
 
   render() {
     const { pictures, title } = this.props;
@@ -23,13 +26,12 @@ class Carousel extends React.Component {
 
     return (
       <div className="carousel">
-        <FaChevronLeft className="carousel__left-arrow" onClick={this.prevPicture}/>
-        <FaChevronRight className="carousel__right-arrow" onClick={this.nextPicture}/>
-        <img src={pictures[currentPicture]} alt={title} className="carousel__img"></img>        
+        <img src={ChevronLeft} alt="previous" className="carousel__left-arrow" onClick={this.prevPicture} />
+        <img src={ChevronRight} alt="next" className="carousel__right-arrow" onClick={this.nextPicture} />
+        <img src={pictures[currentPicture]} alt={title} className="carousel__img"></img>
       </div>
     );
   }
 }
-//pourquoi pas d'appel de la fonction dans le Fa??
 
 export default Carousel;

@@ -1,22 +1,26 @@
-import React, {Component} from 'react';
-import Banner from '../../components/banner/Banner';
-import Thumb from '../../components/thumb/Thumb';
-import { rentalList } from '../../datas/rentalList';
-import BackgroundImg from '../../assets/homepage-background.png'
-import "./Homepage.css"
+import React from "react";
 
-class Homepage extends Component {
+import { rentalList } from "../../datas/rentalList";
+
+import "./Homepage.css";
+
+import Banner from "../../components/banner/Banner";
+import Thumb from "../../components/thumb/Thumb";
+
+import BackgroundImg from "../../assets/homepage-background.png";
+
+class Homepage extends React.Component {
   render() {
-    return (      
-      <div className="homepage">              
-        <Banner textContent="Chez vous, partout et ailleurs" imgSrc={BackgroundImg} altSrc="Bord de mer"/>         
+    return (
+      <div className="homepage">
+        <Banner textContent="Chez vous, partout et ailleurs" imgSrc={BackgroundImg} altSrc="Bord de mer" />
         <main className="layout">
           {rentalList.map((rental) => (
-            <article key={rental.id} className="rental__block"> 
-              <Thumb title={rental.title} cover={rental.cover} id={rental.id}/>
+            <article key={rental.id} className="rental__block">
+              <Thumb title={rental.title} cover={rental.cover} id={rental.id} />
             </article>
-          ))}       
-        </main>         
+          ))}
+        </main>
       </div>
     );
   }

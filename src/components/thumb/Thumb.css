@@ -1,37 +1,42 @@
 .thumb {
-    height: 255px;
-    position: relative;
-    width: 335px;
+  position: relative;
+}
+
+.thumb,
+.thumb__img {
+  height: 255px;
+  width: 335px;
 }
 
 .thumb__cover {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
-    border-radius: 10px;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .thumb__img {
-    border-radius: 10px;    
-    height: 255px;
-    object-fit: cover;
-    width: 335px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .thumb__text {
-    color: #fff;
-    bottom: 20px;
-    font-size: 1.25rem;
-    font-weight: 500;
-    left: 20px;
-    position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  left: 20px;
+  position: absolute;
+  width: 190px;
 }
 
+@media screen and (min-width: 1440px) {
+  .thumb,
+  .thumb__img {
+    height: 340px;
+    width: 340px;
+  }
+}

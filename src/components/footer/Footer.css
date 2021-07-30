@@ -1,20 +1,21 @@
 .footer {
-    align-items: center;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    height: 209px;
-    justify-content: center;
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 209px;
+  justify-content: center;
 }
 
 .footer__logo {
-    height: 40px;
-    width: 122px;
+  height: 40px;
+  margin-bottom: 30px;
+  width: 122px;
 }
 
 .footer__text {
-    color: #ffffff;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 0.75rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
 }

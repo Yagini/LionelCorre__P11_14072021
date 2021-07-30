@@ -1,7 +1,7 @@
-import "./Thumb.css";
 import React from "react";
 import { Link } from "react-router-dom";
-//navLink??
+
+import "./Thumb.css";
 
 class Thumb extends React.Component {
   render() {

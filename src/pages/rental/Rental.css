@@ -1,44 +1,105 @@
 .rental {
-    margin: auto;    
-    width: 335px;
+  margin: auto;
+  width: 335px;
 }
 
-.rental__host {    
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    width: 335px;
+.rental__host {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 335px;
 }
 
 .rental__mains-informations {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .rental__presentation {
-    width: 90%;
+  width: 90%;
 }
 
-.rental__title, .rental__location, .rental__host {
-    color: #FF6060;
-    font-style: normal;
-    font-weight: 500;
-    margin-bottom: 10px;
+.rental__title,
+.rental__location,
+.rental__host {
+  color: #ff6060;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .rental__title {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 .rental__location {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 
 .rental__tag-body {
-    display: flex;
-    flex-direction: row;   
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
+@media screen and (min-width: 768px) {
+  .rental,
+  .rental__details-informations {
+    width: 728px;
+  }
 
+  .rental__mains-informations {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 25px;
+  }
+
+  .rental__details-informations {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rental__description,
+  .rental__equipments {
+    width: 350px;
+  }
+
+  .rental__host {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    width: 200px;
+  }
+
+  .rental__title {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rental,
+  .rental__details-informations {
+    width: 1240px;
+  }
+
+  .rental__description,
+  .rental__equipments {
+    width: 585px;
+  }
+
+  .rental__block {
+    margin-bottom: 50px;
+  }
+
+  .rental__title {
+    font-size: 2.25rem;
+    width: 800px;
+  }
+
+  .rental__location {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+}

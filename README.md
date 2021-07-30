@@ -1,3 +1,11 @@
+# Presentation
+
+This project is a website for Kasa.
+Kasa is a leader in the rental of apartments between individuals in France. 
+Kasa's site was coded over 10 years ago in ASP.NET with significant legacy code. 
+
+Creation of a site with the use of the modern React framework
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

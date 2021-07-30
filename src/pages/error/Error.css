@@ -1,23 +1,35 @@
-.error__title, .error__subtitle, .error__link {
-    color: #ff6060;    
-    text-align: center;
-    font-style: normal;
+.error__title,
+.error__subtitle,
+.error__link {
+  color: #ff6060;
+  font-style: normal;
+  text-align: center;
 }
 
 .error__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 235px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 235px;
 }
 
 .error__subtitle {
-    font-size: 1.125rem;
-    font-weight: 500; 
-    margin-bottom: 133px;     
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 133px;
 }
 
-.error__title {    
-    font-size: 6rem;
-    margin-top: 200px;
+.error__title {
+  font-size: 6rem;
+  margin-top: 200px;
+}
+
+@media screen and (min-width: 1440px) {
+  .error__title {
+    font-size: 18rem;
+  }
+
+  .error__subtitle {
+    font-size: 2.25rem;
+  }
 }

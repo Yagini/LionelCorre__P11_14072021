@@ -1,32 +1,57 @@
 :root {
-    --main-color: #FF6060;
+  --main-color: #ff6060;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto ;
-    width: 335px;
-        
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 335px;
 }
 
 .nav__main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 43px;     
+  align-items: center;
+  display: flex;
+  height: 43px;
+  justify-content: space-between;
 }
 
 .nav__link--home {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.nav__link{
-    color: var(--main-color);    
-    font-weight: 500;
-    font-style: normal;    
+.nav__link {
+  color: var(--main-color);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .nav__logo {
-    height: 43px;
+  height: 43px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 728px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav {
+    margin: 40px auto 60px;
+    width: 1240px;
+  }
+
+  .nav__link {
+    font-size: 1.5rem;
+  }
+
+  .nav__link--home {
+    margin-right: 50px;
+  }
+
+  .nav__main,
+  .nav__logo {
+    height: 68px;
+  }
 }

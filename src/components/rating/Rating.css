@@ -1,4 +1,19 @@
 .rating__star {
-    font-size: 0.75rem;
+  height: 1rem;
+  margin-right: 3px;
+  width: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .rating {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rating__star {
+    height: 2rem;
     margin-right: 3px;
+    width: 2rem;
+  }
 }

@@ -1,8 +1,30 @@
 .rental__block {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .layout {
+  margin: auto;
+  width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .layout {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: auto;
-    width: 335px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-top: 20px;
+    width: 728px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .layout {
+    width: 1240px;
+    padding-top: 50px;
+  }
 }

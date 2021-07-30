@@ -1,9 +1,12 @@
 import React from "react";
-import aboutBackground from "../../assets/about-background.png";
+
+import { aboutData } from "../../datas/aboutData";
+
 import "./About.css";
+
 import Banner from "../../components/banner/Banner";
 import Dropdown from "../../components/dropdown/Dropdown";
-import { aboutData } from "../../datas/aboutData";
+import aboutBackground from "../../assets/about-background.png";
 
 class About extends React.Component {
   state = {};
@@ -11,9 +14,11 @@ class About extends React.Component {
     return (
       <div className="about">
         <Banner imgSrc={aboutBackground} />
-        {aboutData.map((about) => (
-          <Dropdown name={about.title} content={about.text} key={about.id} />
-        ))}
+        <div className="about__informations">
+          {aboutData.map((about) => (
+            <Dropdown name={about.title} content={about.text} key={about.id} />
+          ))}
+        </div>
       </div>
     );
   }

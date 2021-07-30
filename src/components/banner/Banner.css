@@ -1,37 +1,69 @@
-.banner{
-    border-radius: 25px;    
-    height: 111px; 
-    margin: auto;   
-    position: relative;
-    margin-bottom: 20px;
-    width: 335px;
+.banner {
+  border-radius: 25px;
+  height: 111px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  width: 335px;
 }
 
-.banner__cover{
-    border-radius: 25px;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    opacity: 0.3;
-    background-color: black;
-    top: 0;
-    width: 100%;
+.banner__cover {
+  background-color: black;
+  border-radius: 25px;
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-.banner__background {    
-    border-radius: 25px; 
-    width: 335px;
-    height: 100%;
-    object-fit: cover;
+.banner__background {
+  border-radius: 25px;
+  height: 100%;
+  object-fit: cover;
+  width: 335px;
 }
 
-.banner__text {    
-    color: white;    
-    font-size: 1.5rem;
-    font-weight: 500;  
-    position: absolute; 
-    top: 50px;
-    left: 20px;
-    width: 217px;    
+.banner__text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  left: 20px;
+  position: absolute;
+  top: 50px;
+  width: 217px;
 }
 
+@media screen and (min-width: 768px) {
+  .banner,
+  .banner__background {
+    width: 728px;
+  }
+
+  .banner__text {
+    font-size: 2rem;
+    left: 125px;
+    top: 40px;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .banner {
+    margin-bottom: 30px;
+  }
+
+  .banner,
+  .banner__background {
+    height: 223px;
+    width: 1240px;
+  }
+
+  .banner__text {
+    font-size: 3rem;
+    left: 260px;
+    top: 85px;
+    width: 800px;
+  }
+}

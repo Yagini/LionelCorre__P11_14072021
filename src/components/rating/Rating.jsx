@@ -1,6 +1,9 @@
 import React from "react";
+
 import "./Rating.css";
-import { FaRegStar, FaStar } from "react-icons/fa";
+
+import FillStar from "../../assets/icons/star-fill.svg";
+import Star from "../../assets/icons/star-empty.svg";
 
 class Rating extends React.Component {
   render() {
@@ -11,9 +14,9 @@ class Rating extends React.Component {
       <div className="rating">
         {range.map((rangeNumber, index) =>
           rating >= rangeNumber ? (
-            <FaStar key={index} className="rating__star rating__star-isfill" />
+            <img src={FillStar} alt="" key={index} className="rating__star rating__star-isfill" />
           ) : (
-            <FaRegStar key={index} className="rating__star" />
+            <img src={Star} alt="" key={index} className="rating__star" />
           )
         )}
       </div>
