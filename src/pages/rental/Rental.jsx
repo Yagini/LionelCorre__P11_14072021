@@ -19,7 +19,7 @@ class Rental extends React.Component {
   }
 
   render() {
-    const { title, pictures, description, host, rating, location, tags } = this.state.filteredRental;
+    const { title, pictures, description, host, rating, location, equipments, tags } = this.state.filteredRental;
 
     return (
       <main className="rental">
@@ -48,7 +48,7 @@ class Rental extends React.Component {
               name="Equipements"
               content={
                 <ul>
-                  {this.state.filteredRental.equipments.map((equipment, index) => (
+                  {equipments.map((equipment, index) => (
                     <li key={index} className="dropdown__list">
                       {equipment}
                     </li>
